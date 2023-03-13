@@ -64,6 +64,7 @@ export default {
                 <span class="px-8 shrink-0">Foodie journal</span>
             </h1>
             <div class="grid-section grid grid-cols-3 gap-8 p-8">
+
                 <AppCard
                 v-for="card in foodieJournal" :key="card.articleName" 
                 :cardImage="card.articleCover"

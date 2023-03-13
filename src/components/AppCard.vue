@@ -35,7 +35,7 @@ export default {
     <div class="card text-center group">
         <div class="img-wrapper relative">
             <img :src="cardImage" alt="">
-            <div class="img-overlay w-[100%] h-[100%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hidden group-hover:flex group-hover:cursor-pointer flex-col justify-center items-center">
+            <div class="img-overlay w-full h-full absolute top-0 left-0 hidden group-hover:flex group-hover:cursor-pointer flex-col justify-center items-center">
 
                 <div class="icon-wrapper w-[40px] h-[40px] p-1 bg-white text-orange rounded-full flex justify-center items-center mx-auto">
                     <font-awesome-icon icon="fa-solid fa-link"/>
