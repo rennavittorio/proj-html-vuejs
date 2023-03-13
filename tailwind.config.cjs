@@ -11,7 +11,7 @@ module.exports = {
     colors: {
       'orange': '#FF4D00',
       'grey': '#3A3A3F',
-      'lightfrey': '#9C9894',
+      'lightgrey': '#9C9894',
       'white': '#ffffff'
     },
     fontFamily: {
