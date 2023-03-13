@@ -1,0 +1,53 @@
+<script>
+import store from '../store';
+
+export default {
+    props: {
+        cardImgImage: {
+            type: String,
+            required: true,
+        },
+        cardImgTitle: {
+            type: String,
+            required: true,
+        },
+    },
+
+    data(){
+        return {
+            store,
+        }
+    }
+}
+
+</script>
+
+<template>
+
+    <div class="img-wrapper group relative">
+        <img :src="cardImgImage" alt="">
+        <div class="img-overlay w-full h-full absolute top-0 left-0 hidden group-hover:flex group-hover:cursor-pointer flex-col justify-center items-center">
+
+            <div class="icon-wrapper w-[40px] h-[40px] p-1 bg-white text-orange rounded-full flex justify-center items-center mx-auto">
+                <font-awesome-icon icon="fa-solid fa-link"/>
+            </div>
+            <div class="title__overlay p-3 text-2xl font-serif text-white">
+                {{ cardImgTitle }}
+            </div>
+
+        </div>
+    </div>
+
+</template>
+
+<style scoped>
+.img-wrapper:hover .img-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(255,76,0, 0.9) 35%,
+        rgba(255,76,0, 0.75) 75%,
+        rgba(255,76,0, 0.5) 100%
+    );
+}
+
+</style>
