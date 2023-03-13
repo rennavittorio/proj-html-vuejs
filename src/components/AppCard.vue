@@ -32,8 +32,8 @@ export default {
 
 <template>
 
-    <div class="card text-center group">
-        <div class="img-wrapper relative">
+    <div class="card text-center">
+        <div class="img-wrapper group relative">
             <img :src="cardImage" alt="">
             <div class="img-overlay w-full h-full absolute top-0 left-0 hidden group-hover:flex group-hover:cursor-pointer flex-col justify-center items-center">
 
