@@ -1,10 +1,12 @@
 <script>
 import store from '../store';
 import AppSocialBar from './AppSocialBar.vue';
+import AppNavbar from './AppNavbar.vue';
 
 export default {
     components: {
         AppSocialBar,
+        AppNavbar,
     },
 
     data(){
@@ -18,7 +20,7 @@ export default {
 
 <template>
 
-    <header class="header">
+    <header class="header bg-bg-grey">
 
         <div class="container">
 
@@ -36,17 +38,15 @@ export default {
                     </p>
                 </div>
 
-                <div class="logo-wrapper">
-                    <img src="/images/avada-food-logo-2x.png" alt="logo" class="w-36">
-                </div>
-
                 <AppSocialBar />
 
             </div>
 
-            <div class="nav-bar">
-                nav.bar
+            <div class="logo-wrapper -mt-16">
+                <img src="/images/avada-food-logo-2x.png" alt="logo" class="w-36 mx-auto my-2">
             </div>
+
+            <AppNavbar />
 
         </div>
 

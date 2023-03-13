@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-  <div class="p-6 text-6xl font-serif">
+  <div class="">
 
-    <span class="hover:font-sans">it works!</span>
+    it works....
 
   </div>
 </template>
