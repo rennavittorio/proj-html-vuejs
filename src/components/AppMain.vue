@@ -1,10 +1,12 @@
 <script>
 import store from '../store';
 import AppHero from './AppHero.vue';
+import AppPopularRecipes from './AppPopularRecipes.vue';
 
 export default {
     components: {
         AppHero,
+        AppPopularRecipes,
     },
     data(){
         return {
@@ -18,7 +20,12 @@ export default {
 <template>
 
     <main class="main">
+
         <AppHero />
+
+        <AppPopularRecipes />
+
+
 
     </main>
 
