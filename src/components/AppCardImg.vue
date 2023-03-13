@@ -31,7 +31,7 @@ export default {
             <div class="icon-wrapper w-[40px] h-[40px] p-1 bg-white text-orange rounded-full flex justify-center items-center mx-auto">
                 <font-awesome-icon icon="fa-solid fa-link"/>
             </div>
-            <div class="title__overlay p-3 text-2xl font-serif text-white">
+            <div class="title__overlay p-3 text-xl font-serif text-white">
                 {{ cardImgTitle }}
             </div>
 
