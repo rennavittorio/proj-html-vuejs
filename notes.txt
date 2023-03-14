@@ -1,0 +1,10 @@
+-- domande x tutor --
+specifiche:
+1. sec hero - come gestire meglio la sovrapposizione cards-bg (ora: elemento vuoto --> va bene anche cosi, con tailwind si fa, basta che non sia un elemento interattivo ma solo grafico)
+2. sec blog - come gestire funzione ''load more'' (--> mettere params nella computed di riferimento + watcher)
+
+generali:
+3. si possono impostare effetti ''ricorrenti'' in tailwind (e.g. ogni volta che metto l'hover, in automatico mi imposta il cursor: pointer;)
+4. come organizzare al meglio la cartella component (e più in generale la creazione dei component --> spesso si divide a livello di /src le 'pagine' dai 'components')
+
+

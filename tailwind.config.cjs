@@ -22,7 +22,13 @@ module.exports = {
     },
 
 
-    extend: {},
+    extend: {
+      // colors: {
+      //   gray: {
+      //     50: 
+      //   }
+      // }
+    },
 
   },
   plugins: [],

@@ -15,7 +15,14 @@ export default {
     data(){
         return {
             store,
+            otherArticlesMaxNum: 5,
             selectedArticles: 'popular',
+        }
+    },
+    methods: {
+        increaseMaxNum(){
+            this.otherArticlesMaxNum +=2;
+            console.log(this.otherArticlesMaxNum);
         }
     },
     
@@ -24,15 +31,15 @@ export default {
             return this.store.foodieJournal[0];
         },
         otherArticles(){
-            let filteredList = [...this.store.foodieJournal].slice(1,7)
+            let filteredList = [...this.store.foodieJournal].slice(1,this.otherArticlesMaxNum);
             return filteredList;
         },
         topThreePopular(){
-            let filteredList = [...this.store.foodieJournal].slice(0,3)
+            let filteredList = [...this.store.foodieJournal].slice(0,3);
             return filteredList;
         },
         topThreeRecent(){
-            let filteredList = [...this.store.foodieJournal].slice(4,7)
+            let filteredList = [...this.store.foodieJournal].slice(4,7);
             return filteredList;
         },
     }
@@ -100,7 +107,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="other-articles grid grid-cols-2 gap-9">
+                    <div class="other-articles grid grid-cols-2 gap-9 mb-8">
                         <AppCard
                         class="shadow-lg"
                         v-for="article in otherArticles" :key="article.articleName"
@@ -110,6 +117,18 @@ export default {
                         :cardDate="article.articleDate"
                         />
                     </div>
+
+
+                    <div class="btn-more mb-8">
+                        <AppBtn 
+                        @click="increaseMaxNum()"
+                        :class="['uppercase', 'text-center', 'bg-lightgrey', 'hover:bg-grey', 'hover:text-white', otherArticlesMaxNum > 8 ? 'hidden' : '']"
+                        :btnText="'load more post'"
+                        :btnLink="'#'"
+                        />
+                    </div>
+
+
                 </div>
 
 
