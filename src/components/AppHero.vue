@@ -10,32 +10,16 @@ export default {
     data(){
         return {
             store,
-            foodieJournal: [
-                {
-                    articleName: 'Food corner: top japanese restaurants for sushi',
-                    articleCover: '/images/foodie-1.jpg',
-                    articleDate: 'March 25, 2019',
-                    articleAuthor: 'Admin',
-                },
-                {
-                    articleName: 'Roundup: My New Favourite Recipes For Healthy Living',
-                    articleCover: '/images/foodie-2.jpg',
-                    articleDate: 'March 25, 2019',
-                    articleAuthor: 'Admin',
-                },
-                {
-                    articleName: 'Why These Toasts with Tea are My New Favorite',
-                    articleCover: '/images/foodie-3.jpg',
-                    articleDate: 'March 25, 2019',
-                    articleAuthor: 'Admin',
-                },
-            ]
         }
     },
 
     computed: {
         firstArticle(){
-            return this.foodieJournal[0];
+            return this.store.foodieJournal[0];
+        },
+        topThreeArticles(){
+            let filteredList = [...this.store.foodieJournal].slice(0, 3)
+            return filteredList;
         }
     }
 }
@@ -70,7 +54,7 @@ export default {
             <div class="grid-section grid grid-cols-3 gap-8 p-8">
 
                 <AppCard
-                v-for="card in foodieJournal" :key="card.articleName" 
+                v-for="card in topThreeArticles" :key="card.articleName" 
                 :cardImage="card.articleCover"
                 :cardTitle="card.articleName"
                 :cardAuthor="card.articleAuthor"

@@ -14,7 +14,7 @@ export default {
 <template>
   <div class="">
 
-    it works....
+    it works...
 
   </div>
 </template>
