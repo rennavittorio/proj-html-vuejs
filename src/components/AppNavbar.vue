@@ -6,32 +6,6 @@ export default {
         return {
             store,
             activeSearch: false,
-            navLinks: [
-                {
-                    linkName: 'Home',
-                    externalLink: '#',
-                },
-                {
-                    linkName: 'Recipes',
-                    externalLink: '#',
-                },
-                {
-                    linkName: 'Places',
-                    externalLink: '#',
-                },
-                {
-                    linkName: 'Blog',
-                    externalLink: '#',
-                },
-                {
-                    linkName: 'About',
-                    externalLink: '#',
-                },
-                {
-                    linkName: 'Contact',
-                    externalLink: '#',
-                },
-            ]
         }
     },
 
@@ -54,7 +28,7 @@ export default {
     <ul 
     :class="['nav-bar', 'justify-center', 'gap-5', activeSearch === false ? 'flex' : 'hidden']">
 
-        <li v-for="link in navLinks" :key="link.linkName"
+        <li v-for="link in store.navLinks" :key="link.linkName"
         class="nav__item px-3 py-5 hover:text-orange">
             <a :href="link.externalLink">
                 {{ link.linkName }}

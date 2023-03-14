@@ -74,6 +74,32 @@ const store = reactive({
             articleDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum repudiandae autem maxime dolorem tempora facere fugiat molestiae voluptatem nihil? Incidunt nemo tenetur temporibus voluptatibus necessitatibus dolorum sit modi ea.',
             totalReads: 56,
         },
+    ],
+    navLinks: [
+        {
+            linkName: 'Home',
+            externalLink: '#',
+        },
+        {
+            linkName: 'Recipes',
+            externalLink: '#',
+        },
+        {
+            linkName: 'Places',
+            externalLink: '#',
+        },
+        {
+            linkName: 'Blog',
+            externalLink: '#',
+        },
+        {
+            linkName: 'About',
+            externalLink: '#',
+        },
+        {
+            linkName: 'Contact',
+            externalLink: '#',
+        },
     ]
 })
 
