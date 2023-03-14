@@ -1,10 +1,12 @@
 <script>
 import store from '../store';
 import AppCardImg from './AppCardImg.vue';
+import AppBtn from './AppBtn.vue';
 
 export default {
     components: {
         AppCardImg,
+        AppBtn,
     },
     props: {
         cardImage: {
@@ -51,10 +53,12 @@ export default {
             <p class="card__description">
                 {{ cardDescription }}
             </p>
-            <div class="btn py-2 px-6 bg-orange hover:bg-dark-orange hover:cursor-pointer text-white w-fit">
-                Learn more
-            </div>
 
+            <AppBtn
+            class="w-fit"
+            :btnText="'Learn more'"
+            :btnLink="'#'" 
+            />
         </div>
     </div>
 
