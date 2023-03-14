@@ -17,7 +17,7 @@ export default {
 
 <template>
 
-    <section class="subscribe-section h-[700px] flex justify-center items-center">
+    <section class="subscribe-section h-[700px] flex justify-center items-center relative">
 
         <div class="container bg-white py-5">
             <h1 class="section__title text-center font-serif text-2xl mb-5">
@@ -49,5 +49,4 @@ export default {
 .subscribe-section {
     background: url('/images/receipe-2.jpg');
 }
-
 </style>
