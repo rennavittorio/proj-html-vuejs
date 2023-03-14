@@ -36,7 +36,7 @@ export default {
 
 <template>
 
-    <div class="card text-center">
+    <div class="card text-center pb-5">
         <AppCardImg 
         :cardImgImage="cardImage"
         :cardImgTitle="cardTitle"
@@ -45,7 +45,7 @@ export default {
         <h3 class="card__title p-3 text-2xl font-serif hover:text-orange hover:cursor-pointer">
             {{ cardTitle }}
         </h3>
-        <div class="card__info text-lightgrey text-sm">
+        <div class="card__info text-lightgrey text-sm px-3">
             <span class="card__author after:content-['|'] after:mx-1">{{ cardAuthor }}</span>
             <span class="card__date">{{ cardDate }}</span>
         </div>
