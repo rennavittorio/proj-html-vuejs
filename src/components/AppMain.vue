@@ -2,11 +2,13 @@
 import store from '../store';
 import AppHero from './AppHero.vue';
 import AppPopularRecipes from './AppPopularRecipes.vue';
+import AppCulinaryCollection from './AppCulinaryCollection.vue';
 
 export default {
     components: {
         AppHero,
         AppPopularRecipes,
+        AppCulinaryCollection,
     },
     data(){
         return {
@@ -24,6 +26,8 @@ export default {
         <AppHero />
 
         <AppPopularRecipes />
+
+        <AppCulinaryCollection />
 
 
 
