@@ -75,7 +75,7 @@ export default {
     display: block;
     width: 100%;
     height: 2px;
-    border: 2px dashed #f5f5f1;
+    border: 2px dashed #9C9894;
     margin-top: 20px;
 }
 

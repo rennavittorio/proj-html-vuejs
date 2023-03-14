@@ -23,7 +23,7 @@ export default {
 
 <template>
 
-    <main class="main">
+    <main class="main bg-bg-grey">
 
         <AppHero />
 

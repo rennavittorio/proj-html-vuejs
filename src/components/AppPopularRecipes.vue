@@ -101,6 +101,7 @@ export default {
         <div class="container mx-auto grid grid-cols-2 gap-x-12">
             <div class="main-card">
                 <AppCardLg
+                class="bg-white shadow-lg"
                 :cardImage="firstReceipe.recipeCover"
                 :cardTitle="firstReceipe.recipeName"
                 :cardTags="firstReceipe.recipeTags[0]"

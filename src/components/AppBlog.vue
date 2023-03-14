@@ -2,15 +2,20 @@
 import store from '../store';
 import AppBtn from './AppBtn.vue';
 import AppCard from './AppCard.vue';
+import AppCardSm from './AppCardSm.vue';
+import AppSocialBar from './AppSocialBar.vue';
 
 export default {
     components: {
         AppBtn,
         AppCard,
+        AppCardSm,
+        AppSocialBar,
     },
     data(){
         return {
             store,
+            selectedArticles: 'popular',
         }
     },
     
@@ -21,7 +26,15 @@ export default {
         otherArticles(){
             let filteredList = [...this.store.foodieJournal].slice(1,7)
             return filteredList;
-        }
+        },
+        topThreePopular(){
+            let filteredList = [...this.store.foodieJournal].slice(0,3)
+            return filteredList;
+        },
+        topThreeRecent(){
+            let filteredList = [...this.store.foodieJournal].slice(4,7)
+            return filteredList;
+        },
     }
 }
 
@@ -101,8 +114,100 @@ export default {
 
 
 
-                <aside class="bg-grey">
-                    Aside...
+                <aside>
+                    <div class="ad__section relative">
+                        <a href="#" class="relative">
+                            <div class="img-wrapper">
+                                <img src="/images/aside-1.jpg" alt="">
+                            </div>
+                            <h1 class="ad__cta text-2xl uppercase text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                                View or latest recipes
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="city__section">
+                        <a href="#" class="relative">
+                            <div class="img-wrapper">
+                                <img src="/images/aside-2.jpg" alt="">
+                            </div>
+                            <h1 class="ad__cta text-2xl uppercase text-center bg-grey text-white p-2 absolute bottom-[10%]">
+                                City guide: Singapore
+                            </h1>
+                        </a>
+                        <AppBtn 
+                        class="text-center uppercase"
+                        :btnText="'View all city guides'"
+                        :btnLink="'#'"
+                        :btnIcon="'fa-earth-americas'"
+                        />
+                    </div>
+
+                    <div
+                    :class="['searchbar', 'justify-center', 'items-center']">
+                        <label class="relative block">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <div class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="text-lightgrey"/>
+                            </div>
+                        </span>
+                            <input class="w-[100%] block bg-white border border-lightgrey border-slate-300 rounded py-5 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm" placeholder="Search..." type="text" name="search"/>
+                        </label>
+                    </div>
+
+                    <div class="social__section">
+                        <h1 class="section__title capitalize text-orange font-serif text-2xl">
+                            Follow us
+                        </h1>
+                        <AppSocialBar 
+                        class="modified-social-bar"
+                        />
+                    </div>
+
+                    <div class="popular-recent__section">
+
+                        <div class="btn-wrapper grid grid-cols-2 font-serif text-center hover:cursor-pointer mb-6">
+                            <div @click="() => selectedArticles = 'popular'" 
+                            class="btn__popular border-r-2 border-r-lightgrey py-5 hover:bg-white hover:cursor-pointer">
+                                Popular
+                            </div>
+
+                            <div @click="() => selectedArticles = 'recent'" 
+                            class="btn__recent border-l-2 border-l-lightgrey py-5 hover:bg-white hover:cursor-pointer">
+                                Recent
+                            </div>
+                        </div>
+
+                        <div v-if="selectedArticles === 'popular'" 
+                        class="popular-articles">
+
+                            <AppCardSm 
+                            class="mb-6"
+                            v-for="article in topThreePopular"
+                            :cardSmImg="article.articleCover"
+                            :cardSmText="article.articleName"
+                            :cardSmDate="article.articleDate"
+                            />
+
+                        </div>
+
+                        
+                        <div v-else 
+                        class="recent-articles">
+
+                            <AppCardSm 
+                            class="mb-6"
+                            v-for="article in topThreeRecent"
+                            :cardSmImg="article.articleCover"
+                            :cardSmText="article.articleName"
+                            :cardSmDate="article.articleDate"
+                            />
+
+                        </div>
+
+                    </div>
+
+
                 </aside>
 
 
@@ -119,9 +224,26 @@ export default {
     display: block;
     width: 100%;
     height: 2px;
-    border: 2px dashed #f5f5f1;
+    border: 2px dashed #9C9894;
     margin: 20px 0;
 
 }
 
+aside > * {
+    margin-bottom: 48px;
+}
+
+.ad__cta {
+    opacity: 0.8;
+}
+
+.city__section:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border: 2px solid #9C9894;
+    margin: 48px 0;
+
+}
 </style>
