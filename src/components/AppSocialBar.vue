@@ -48,8 +48,13 @@ export default {
     <div v-for="social in socials" :key="social.socialName" 
     class="social-icon text-lightgrey p-2 hover:text-grey hover:bg-white rounded-md hover:cursor-pointer relative group">
         <font-awesome-icon :icon="['fa-brands', social.iconName]" />
-        <div class="social__text bg-grey text-white hidden group-hover:block rounded-sm text-sm px-1 absolute bottom-[-50%] right-[50%] translate-x-[50%]">
-            {{ social.socialName }}
+        <div class="social__text hidden group-hover:flex flex-col justify-center items-center absolute bottom-[-75%] right-[50%] translate-x-[50%]">
+            <div class="icon-wrap">
+                <font-awesome-icon icon="fa-solid fa-caret-up" class="text-grey"/>
+            </div>
+            <div class="text-wrap bg-grey text-white rounded-sm text-sm px-1 mt-[-10px]">
+                {{ social.socialName }}
+            </div>
         </div>
     </div>
   </div>

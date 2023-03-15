@@ -7,12 +7,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret, faMagnifyingGlass, faLink, faBookOpenReader, faEarthAmericas, faLocationDot, faPhoneFlip, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faMagnifyingGlass, faLink, faBookOpenReader, faEarthAmericas, faLocationDot, faPhoneFlip, faEnvelope, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faYoutube, faTiktok, faPinterestP } from '@fortawesome/free-brands-svg-icons'
 /* add icons to the library */
 library.add(
-    faUserSecret, faMagnifyingGlass, faLink, faBookOpenReader, faEarthAmericas, faLocationDot, faPhoneFlip, faEnvelope,
+    faUserSecret, faMagnifyingGlass, faLink, faBookOpenReader, faEarthAmericas, faLocationDot, faPhoneFlip, faEnvelope, faCaretUp,
     faComments,
     faFacebookF, faInstagram, faTwitter, faYoutube, faTiktok, faPinterestP)
 
