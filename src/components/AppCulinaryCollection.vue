@@ -62,7 +62,7 @@ export default {
     <section class="culinary-collection pt-[160px]">
         <div class="container mb-8">
             <div class="text-wrapper text-center">
-                <h1 class="section__title uppercase mb-8">
+                <h1 class="section__title uppercase font-semibold mb-8">
                     Culinary collection
                 </h1>
                 <p class="section__description">

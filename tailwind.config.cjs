@@ -31,7 +31,7 @@ module.exports = {
         },
       },
       animation: {
-        smoothchange: 'smoothchange 350ms ease-out',
+        smoothchange: 'smoothchange 350ms alternate ease-out',
       },
 
     },

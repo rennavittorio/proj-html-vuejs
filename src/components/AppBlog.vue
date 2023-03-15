@@ -54,7 +54,7 @@ export default {
         <div class="container mb-16">
             <div class="grid grid-cols-3 gap-14">
                 <div class="wrapper-text col-span-2">
-                    <h1 class="section__title uppercase">
+                    <h1 class="section__title uppercase mb-8 font-semibold">
                         Farm to table
                     </h1>
                     <p class="section__description">
@@ -64,7 +64,7 @@ export default {
                 </div>
                 <div class="wrapper-btn flex justify-end">
                     <AppBtn 
-                    class="w-fit h-fit"
+                    class="w-fit h-fit bg-orange"
                     :btnText="'Read our blog'"
                     :btnLink="'#'"
                     :btnIcon="'fa-book-open-reader'"

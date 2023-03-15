@@ -90,7 +90,7 @@ export default {
 
         <div class="container mx-auto">
             <div class="w-[540px] mx-auto text-center pt-[110px] pb-[62px]">
-                <h1 class="section__title uppercase mb-8 ">
+                <h1 class="section__title uppercase font-semibold mb-8">
                     Popular recipes
                 </h1> 
                 <p class="section__description">
