@@ -1,10 +1,10 @@
 <script>
 import store from '../store';
-import AppHero from './AppHero.vue';
-import AppPopularRecipes from './AppPopularRecipes.vue';
-import AppCulinaryCollection from './AppCulinaryCollection.vue';
-import AppBlog from './AppBlog.vue';
-import AppSubscribe from './AppSubscribe.vue';
+import AppHero from './main-sections/AppHero.vue';
+import AppPopularRecipes from './main-sections/AppPopularRecipes.vue';
+import AppCulinaryCollection from './main-sections/AppCulinaryCollection.vue';
+import AppBlog from './main-sections/AppBlog.vue';
+import AppSubscribe from './main-sections/AppSubscribe.vue';
 
 export default {
     components: {

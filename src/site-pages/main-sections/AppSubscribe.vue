@@ -1,7 +1,7 @@
 <script>
-import store from '../store';
-import AppBtn from './AppBtn.vue';
-import AppCardImg from './AppCardImg.vue';
+import store from '../../store';
+import AppBtn from '../../components/AppBtn.vue';
+import AppCardImg from '../../components/AppCardImg.vue';
 
 export default {
     components: {

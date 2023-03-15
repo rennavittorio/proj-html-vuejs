@@ -1,9 +1,9 @@
 <script>
-import store from '../store';
-import AppBtn from './AppBtn.vue';
-import AppCard from './AppCard.vue';
-import AppCardSm from './AppCardSm.vue';
-import AppSocialBar from './AppSocialBar.vue';
+import store from '../../store';
+import AppBtn from '../../components/AppBtn.vue';
+import AppCard from '../../components/AppCard.vue';
+import AppCardSm from '../../components/AppCardSm.vue';
+import AppSocialBar from '../../components/AppSocialBar.vue';
 
 export default {
     components: {

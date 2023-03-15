@@ -1,6 +1,6 @@
 <script>
-import store from '../store';
-import AppCategoryCard from './AppCategoryCard.vue';
+import store from '../../store';
+import AppCategoryCard from '../../components/AppCategoryCard.vue';
 
 export default {
     components: {

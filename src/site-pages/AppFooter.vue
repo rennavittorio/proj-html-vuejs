@@ -1,6 +1,6 @@
 <script>
 import store from '../store';
-import AppSocialBar from './AppSocialBar.vue';
+import AppSocialBar from '../components/AppSocialBar.vue';
 
 export default {
     components: {

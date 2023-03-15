@@ -1,7 +1,7 @@
 <script>
-import store from '../store';
-import AppCardLg from './AppCardLg.vue';
-import AppCardImg from './AppCardImg.vue';
+import store from '../../store';
+import AppCardLg from '../../components/AppCardLg.vue';
+import AppCardImg from '../../components/AppCardImg.vue';
 
 export default {
     components: {
