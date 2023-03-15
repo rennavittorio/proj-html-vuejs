@@ -57,7 +57,7 @@ export default {
             </p>
 
             <AppBtn
-            class="w-fit bg-orange"
+            class="w-fit bg-orange rounded-sm uppercase"
             :btnText="'Learn more'"
             :btnLink="'#'" 
             />

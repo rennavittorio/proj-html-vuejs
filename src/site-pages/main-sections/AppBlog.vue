@@ -64,7 +64,7 @@ export default {
                 </div>
                 <div class="wrapper-btn flex justify-end">
                     <AppBtn 
-                    class="w-fit h-fit bg-orange"
+                    class="w-fit h-fit bg-orange rounded-sm uppercase"
                     :btnText="'Read our blog'"
                     :btnLink="'#'"
                     :btnIcon="'fa-book-open-reader'"
@@ -91,11 +91,11 @@ export default {
 
                         <div class="card__footer flex justify-between items-center pb-8 px-3">
                             <div class="btn-link">
-                                <a href="#" class="hover:text-orange">
+                                <a href="#" class="hover:text-orange hover:animate-smoothchange">
                                     Read more >
                                 </a>
                             </div>
-                            <div class="comment-count flex justify-end items-center hover:text-orange hover:cursor-pointer">
+                            <div class="comment-count flex justify-end items-center hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
                                 <div class="icon-wrapper px-3">
                                     <font-awesome-icon icon="fa-regular fa-comments" />
                                 </div>
