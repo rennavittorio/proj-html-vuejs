@@ -11,6 +11,7 @@ export default {
     data(){
         return {
             store,
+            needCover: true,
             recipesList: [
                 {
                     recipeName: 'Lunch Favourite with Salad, Naan And Beans',
@@ -75,7 +76,7 @@ export default {
         },
 
         otherReceipes(){
-            let filteredList = [...this.recipesList].slice(1)
+            let filteredList = [...this.recipesList].slice(1, 7)
             return filteredList;
         }
     }
@@ -114,6 +115,7 @@ export default {
                 v-for="receipe in otherReceipes" :key="receipe.recipeName"
                 :cardImgImage="receipe.recipeCover"
                 :cardImgTitle="receipe.recipeName"
+                :needCover="needCover"
                 />
             </div>
         </div>

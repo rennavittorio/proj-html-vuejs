@@ -11,6 +11,7 @@ export default {
     data(){
         return {
             store,
+            needCover: false,
         }
     },
     computed: {
@@ -53,9 +54,11 @@ export default {
     <section class="top-four-elements">
         <div class="grid grid-cols-4">
             <AppCardImg 
+            class="text-center"
             v-for="article in topFourPopular" :key="article.articleName"
             :cardImgImage="article.articleCover"
             :cardImgTitle="article.articleName"
+            :needCover="needCover"
             />
 
         </div>

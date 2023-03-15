@@ -11,6 +11,10 @@ export default {
             type: String,
             required: true,
         },
+        needCover: {
+            type: Boolean,
+            required: false,
+        }
     },
 
     data(){
@@ -25,7 +29,7 @@ export default {
 <template>
 
     <div class="img-wrapper group relative">
-        <img :src="cardImgImage" alt="" class="block w-[100%] h-[100%] object-cover object-center">
+        <img :src="cardImgImage" alt="" :class="[ needCover===true ? 'object-cover' : '', 'object-center', 'w-[100%]', 'h-[100%]']">
         <div class="img-overlay w-full h-full absolute top-0 left-0 hidden group-hover:flex group-hover:cursor-pointer flex-col justify-center items-center">
 
             <div class="icon-wrapper w-[40px] h-[40px] p-1 bg-white text-orange rounded-full flex justify-center items-center mx-auto">
