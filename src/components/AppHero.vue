@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 .hero-bg {
-    background: url('/images/fi-water-side-rest-1200x790.jpg') white;
+    background: url('/images/hero-2.jpg') white;
     background-repeat: no-repeat no-repeat;
     background-size: cover;
     background-position: center;

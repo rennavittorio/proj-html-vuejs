@@ -33,7 +33,7 @@ export default {
                             iOS
                         </span>
                     </p>
-                    <p class="advertise hover:text-orange hover:cursor-pointer">
+                    <p class="advertise hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
                         Advertise with us
                     </p>
                 </div>

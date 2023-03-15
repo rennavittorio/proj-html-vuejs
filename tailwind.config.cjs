@@ -9,7 +9,7 @@ module.exports = {
       center: true,
     },
     colors: {
-      'orange': '#FF4D00',
+      'orange': '#fc7523',
       'lightorange': '#DD4D00',
       'dark-orange': '#DD4D00',
       'grey': '#3A3A3F',
