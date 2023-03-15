@@ -25,37 +25,40 @@ export default {
 </script>
 
 <template>
-    <ul 
-    :class="['nav-bar', 'justify-center', 'gap-5', activeSearch === false ? 'flex' : 'hidden']">
-
-        <li v-for="link in store.navLinks" :key="link.linkName"
-        class="nav__item px-3 py-5 hover:text-orange">
-            <a :href="link.externalLink">
-                {{ link.linkName }}
-            </a>
-        </li>
-        <li 
-        @click="toggleActiveSearch()" 
-        class="nav__item px-3 py-5 hover:text-orange">
-            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-        </li>
-
-    </ul>
-
-    <div
-    :class="['searchbar', 'justify-center', 'items-center', activeSearch === false ? 'hidden' : 'flex']">
-        <label class="relative block">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-            <div class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="text-lightgrey"/>
+    <div class="menu-wrapper h-[75px]">
+        <ul 
+        :class="['nav-bar', 'justify-center', 'gap-5','py-2', activeSearch === false ? 'flex' : 'hidden']">
+    
+            <li v-for="(link, i) in store.navLinks" :key="link.linkName"
+            :class="['nav__item', 'px-3', 'py-5', 'hover:text-orange', i === 0 ? 'active' : '']">
+                <a :href="link.externalLink">
+                    {{ link.linkName }}
+                </a>
+            </li>
+            <li 
+            @click="toggleActiveSearch()" 
+            class="nav__item px-3 py-5 hover:text-orange">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            </li>
+    
+        </ul>
+    
+        <div
+        :class="['searchbar', 'justify-center', 'items-center','py-2', activeSearch === false ? 'hidden' : 'flex']">
+            <label class="relative block">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <div class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="text-lightgrey"/>
+                </div>
+            </span>
+                <input class="w-[550px] block bg-white border border-lightgrey border-slate-300 rounded py-5 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm" placeholder="Search..." type="text" name="search"/>
+            </label>
+            <div 
+            @click="toggleActiveSearch()"
+            class="btn-close p-3 font-bold hover:cursor-pointer">
+                X
             </div>
-        </span>
-            <input class="w-[550px] block bg-white border border-lightgrey border-slate-300 rounded py-5 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm" placeholder="Search..." type="text" name="search"/>
-        </label>
-        <div 
-        @click="toggleActiveSearch()"
-        class="btn-close p-3 font-bold">
-            X
+    
         </div>
 
     </div>
@@ -67,6 +70,18 @@ export default {
 .nav__item {
     position: relative;
 }
+
+.nav__item.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding: 2px;
+    background-color: #FF4D00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .nav__item:hover a::after{
     content: '';
     display: block;

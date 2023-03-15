@@ -40,6 +40,7 @@ export default {
                     <input type="mail" placeholder="Insert your mail" class="w-[550px] block border-slate-300 rounded py-2 pl-9 pr-3 shadow-sm focus-visible:outline-lightorange focus:outline-orange sm:text-sm">
                 </div>
                 <AppBtn 
+                class="bg-orange"
                 :btnText="'Subscribe'"
                 :btnLink="'#'"
                 />

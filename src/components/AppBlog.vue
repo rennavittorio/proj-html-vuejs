@@ -155,7 +155,7 @@ export default {
                             </h1>
                         </a>
                         <AppBtn 
-                        class="text-center uppercase"
+                        class="text-center uppercase bg-orange"
                         :btnText="'View all city guides'"
                         :btnLink="'#'"
                         :btnIcon="'fa-earth-americas'"

@@ -27,7 +27,7 @@ export default {
 
 <template>
 
-    <div class="btn py-2 px-6 bg-orange hover:bg-dark-orange hover:cursor-pointer text-white">
+    <div class="btn py-2 px-6 hover:bg-dark-orange hover:cursor-pointer text-white">
         <a :href="btnLink">{{ btnText }}</a>
         <span v-if="btnIcon" class="ml-2">
             <font-awesome-icon :icon="['fa-solid', btnIcon]" />
