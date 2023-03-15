@@ -34,7 +34,7 @@ export default {
                         <ul class="list__menu flex flex-col justify-around h-[100%]" >
                             <li 
                             v-for="link in store.navLinks" :key="link.linkName" 
-                            class="list__item hover:text-orange hover:cursor-pointer">
+                            class="list__item hover:text-orange hover:cursor-pointer relative">
                                <a href="#">{{ link.linkName }}</a> 
                             </li>
                         </ul>
@@ -122,6 +122,32 @@ export default {
 </template>
 
 <style scoped>
+.footer__menu .list__item:hover::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #FF4D00;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    animation: 250ms ease-in-out appear ;
+}
+
+@keyframes appear {
+    0% {
+        right: 50%;
+        background-color: transparent;
+    }
+    100% {
+        right: 0;
+        background-color: #FF4D00;
+    }
+}
+
+
 .footer__contacts .list__item::after {
     content: '';
     display: block;

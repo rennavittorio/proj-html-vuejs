@@ -24,11 +24,16 @@ module.exports = {
 
 
     extend: {
-      // colors: {
-      //   gray: {
-      //     50: 
-      //   }
-      // }
+      keyframes: {
+        smoothchange: {
+          '0%': { color: 'currentColor' },
+          '50%': { color: 'lightorange' },
+          '100%': { color: 'orange' },
+        }
+      },
+      animation: {
+        smoothchange: 'smoothchange 350ms linear',
+      }
     },
 
   },

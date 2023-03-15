@@ -30,14 +30,14 @@ export default {
         :class="['nav-bar', 'justify-center', 'gap-5','py-2', activeSearch === false ? 'flex' : 'hidden']">
     
             <li v-for="(link, i) in store.navLinks" :key="link.linkName"
-            :class="['nav__item', 'px-3', 'py-5', 'hover:text-orange', i === 0 ? 'active' : '']">
+            :class="['nav__item', 'px-3', 'py-5','hover:text-orange', 'hover:animate-smoothchange', i === 0 ? 'active' : '']">
                 <a :href="link.externalLink">
                     {{ link.linkName }}
                 </a>
             </li>
             <li 
             @click="toggleActiveSearch()" 
-            class="nav__item px-3 py-5 hover:text-orange">
+            class="nav__item px-3 py-5 hover:text-orange hover:cursor-pointer">
                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
             </li>
     
@@ -71,11 +71,15 @@ export default {
     position: relative;
 }
 
+.nav__item.active {
+    color: #FF4D00;
+}
+
 .nav__item.active::after {
     content: '';
     display: block;
     width: 100%;
-    padding: 2px;
+    height: 2px;
     background-color: #FF4D00;
     position: absolute;
     bottom: 0;
@@ -86,11 +90,22 @@ export default {
     content: '';
     display: block;
     width: 100%;
-    padding: 2px;
+    height: 2px;
     background-color: #FF4D00;
     position: absolute;
     bottom: 0;
     left: 0;
+
+    animation: 350ms ease-in-out slidein ;
+}
+
+@keyframes slidein {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 </style>
