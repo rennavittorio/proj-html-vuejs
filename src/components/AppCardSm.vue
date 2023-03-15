@@ -31,7 +31,7 @@ export default {
             <img :src="cardSmImg" alt="" class="w-[50px] h-[50px] rounded-full object-cover object-center">
         </div>
         <div class="text-wrapper">
-            <h1 class="article__title hover:text-orange hover:cursor-pointer">
+            <h1 class="article__title hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
                 {{ cardSmText }}
             </h1>
             <p class="article__date text-lightgrey">

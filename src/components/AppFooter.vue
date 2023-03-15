@@ -34,7 +34,7 @@ export default {
                         <ul class="list__menu flex flex-col justify-around h-[100%]" >
                             <li 
                             v-for="link in store.navLinks" :key="link.linkName" 
-                            class="list__item hover:text-orange hover:cursor-pointer relative">
+                            class="list__item hover:text-orange hover:animate-smoothchange hover:cursor-pointer relative">
                                <a href="#">{{ link.linkName }}</a> 
                             </li>
                         </ul>

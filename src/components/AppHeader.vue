@@ -27,7 +27,7 @@ export default {
             <div class="upper-bar flex justify-between items-start py-5">
                 
                 <div class="dowload-action flex items-center gap-x-6">
-                    <p class="download__app hover:text-orange hover:cursor-pointer">
+                    <p class="download__app hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
                         Download App 
                         <span class="bg-orange text-white rounded p-1">
                             iOS

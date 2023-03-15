@@ -35,7 +35,7 @@ export default {
 
         <div class="container">
             <div class="hero__cta bg-bg-grey w-[700px] h-[230px] rounded mx-auto my-[200px] flex flex-col justify-center items-center relative px-[90px] py-[50px]">
-                <h1 class="hero__title font-serif font-bold text-4xl text-center mb-2 hover:text-orange hover:cursor-pointer">
+                <h1 class="hero__title font-serif font-bold text-4xl text-center mb-2 hover:animate-smoothchange  hover:text-orange hover:cursor-pointer">
                     {{ firstArticle.articleName }}
                 </h1>
                 <p class="hero__date text-lightgrey ">

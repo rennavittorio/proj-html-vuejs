@@ -42,7 +42,7 @@ export default {
         :cardImgTitle="cardTitle"
         />
 
-        <h3 class="card__title p-3 text-2xl font-serif hover:text-orange hover:cursor-pointer">
+        <h3 class="card__title p-3 text-2xl font-serif hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
             {{ cardTitle }}
         </h3>
         <div class="card__info text-lightgrey text-sm px-3">

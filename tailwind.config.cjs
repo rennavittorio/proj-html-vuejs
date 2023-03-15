@@ -27,12 +27,11 @@ module.exports = {
       keyframes: {
         smoothchange: {
           '0%': { color: 'currentColor' },
-          '50%': { color: 'lightorange' },
-          '100%': { color: 'orange' },
+          '120%': { color: 'orange' },
         }
       },
       animation: {
-        smoothchange: 'smoothchange 350ms linear',
+        smoothchange: 'smoothchange 350ms ease-out',
       }
     },
 

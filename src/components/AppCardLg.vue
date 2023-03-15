@@ -44,7 +44,7 @@ export default {
         />
 
         <div class="card__text p-6">
-            <h3 class="card__title text-2xl font-serif hover:text-orange hover:cursor-pointer">
+            <h3 class="card__title text-2xl font-serif hover:text-orange hover:animate-smoothchange hover:cursor-pointer">
                 {{ cardTitle }}
             </h3>
             <p class="card__info text-lightgrey text-sm">
