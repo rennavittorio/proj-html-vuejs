@@ -28,11 +28,12 @@ module.exports = {
         smoothchange: {
           '0%': { color: 'currentColor' },
           '120%': { color: 'orange' },
-        }
+        },
       },
       animation: {
         smoothchange: 'smoothchange 350ms ease-out',
-      }
+      },
+
     },
 
   },

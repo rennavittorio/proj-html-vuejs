@@ -48,6 +48,21 @@ export default {
         rgba(255,76,0, 0.75) 75%,
         rgba(255,76,0, 0.5) 100%
     );
+
+    filter: opacity(1);
+
+    animation: smoothappear 350ms ease-out;
+
+}
+
+
+@keyframes smoothappear {
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
 }
 
 </style>
