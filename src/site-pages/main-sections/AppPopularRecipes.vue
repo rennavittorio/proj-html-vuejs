@@ -16,7 +16,7 @@ export default {
                 {
                     recipeName: 'Lunch Favourite with Salad, Naan And Beans',
                     recipeCover: '/images/receipe-1.jpg',
-                    recipeTags: ['tag1', 'tag2'],
+                    recipeTags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
                     recipeDescription: 'Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id',
                 },
                 {
@@ -28,7 +28,7 @@ export default {
                 {
                     recipeName: 'Lunch Favourite with Salad, Naan And Beans',
                     recipeCover: '/images/receipe-3.jpg',
-                    recipeTags: ['tag1', 'tag2'],
+                    recipeTags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
                     recipeDescription: 'Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id',
                 },
                 {
@@ -40,7 +40,7 @@ export default {
                 {
                     recipeName: 'Lunch Favourite with Salad, Naan And Beans',
                     recipeCover: '/images/receipe-5.jpg',
-                    recipeTags: ['tag1', 'tag2'],
+                    recipeTags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
                     recipeDescription: 'Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id',
                 },
                 {
@@ -52,7 +52,7 @@ export default {
                 {
                     recipeName: 'Lunch Favourite with Salad, Naan And Beans',
                     recipeCover: '/images/receipe-7.jpg',
-                    recipeTags: ['tag1', 'tag2'],
+                    recipeTags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
                     recipeDescription: 'Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id',
                 },
                 {
@@ -105,7 +105,7 @@ export default {
                 class="bg-white shadow-lg"
                 :cardImage="firstReceipe.recipeCover"
                 :cardTitle="firstReceipe.recipeName"
-                :cardTags="firstReceipe.recipeTags[0]"
+                :cardTags="firstReceipe.recipeTags"
                 :cardDescription="firstReceipe.recipeDescription"
                 />
             </div>

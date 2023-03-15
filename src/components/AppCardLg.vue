@@ -18,7 +18,7 @@ export default {
             required: true,
         },
         cardTags: {
-            type: String,
+            type: Array,
             required: true,
         },
         cardDescription: {
@@ -48,7 +48,9 @@ export default {
                 {{ cardTitle }}
             </h3>
             <p class="card__info text-lightgrey text-sm">
-                {{ cardTags }}
+                <span v-for="tag in cardTags" :key="tag" class="tag__info">
+                    {{ tag }} 
+                </span> 
             </p>
             <p class="card__description">
                 {{ cardDescription }}
@@ -77,6 +79,10 @@ export default {
     height: 2px;
     border: 2px dashed #9C9894;
     margin-top: 20px;
+}
+
+.tag__info:not(:last-child)::after {
+    content: ', ';
 }
 
 
